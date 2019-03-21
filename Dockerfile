@@ -20,3 +20,4 @@ RUN cmake ../zeo/. && make -j $(nproc) && make install
 WORKDIR /roki_build/roki_build
 RUN cmake ../roki/. && make -j $(nproc) && make install
 WORKDIR /roki_build
+ENV LD_LIBRARY_PATH $LD_LIBRARY_PATH:/usr/local/lib:/usr/lib
